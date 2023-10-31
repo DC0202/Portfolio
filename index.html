@@ -34,7 +34,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = "2667929166";
+    const serviceWorkerVersion = "3979401995";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -56,8 +56,8 @@
   </script>
   <script>
     if (
-      navigator.userAgent.indexOf("Safari") !== -1 &&
-      navigator.userAgent.indexOf("Chrome") === -1
+      navigator.userAgent.indexOf("Safari") !== -1 ||
+      navigator.userAgent.indexOf("Chrome") !== -1
     ) {
       var originalGetContext = HTMLCanvasElement.prototype.getContext;
       HTMLCanvasElement.prototype.getContext = function () {
